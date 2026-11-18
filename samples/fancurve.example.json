@@ -1,0 +1,33 @@
+{
+  // Copie os IDs que o comando "FanCurve list" mostrar. Este arquivo é só um molde.
+  "resumeGapSeconds": 15,
+  "reassertSeconds": 30,
+  "rules": [
+    {
+      "name": "cpu",
+      "sensors": [ "/intelcpu/0/temperature/0" ],
+      "fans": [ "/lpc/nct6798d/control/0" ],
+      "curve": [
+        { "temperatureC": 40, "percent": 35 },
+        { "temperatureC": 60, "percent": 55 },
+        { "temperatureC": 75, "percent": 80 },
+        { "temperatureC": 90, "percent": 100 }
+      ],
+      "floorPercent": 30,
+      "smoothingSeconds": 3,
+      "hysteresisC": 1.5,
+      "rampUpPercentPerSec": 20,
+      "rampDownPercentPerSec": 5,
+      "failsafePercent": 100
+    }
+  ],
+  "storage": {
+    "enabled": true,
+    "recentHours": 24,
+    "retentionMonths": 12,
+    "slowSensorsEverySec": 30
+  },
+  "metrics": [],
+  "recordAllFans": true,
+  "ecoMode": false
+}

@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/FanCurve.Core/FanCurve.Core.csproj" />
+    <Project Path="src/FanCurve/FanCurve.csproj" />
+    <Project Path="src/FanCurvePanel/FanCurvePanel.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/FanCurve.Tests/FanCurve.Tests.csproj" />
+  </Folder>
+</Solution>
